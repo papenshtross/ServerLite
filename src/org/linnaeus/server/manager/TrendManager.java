@@ -1,5 +1,6 @@
 package org.linnaeus.server.manager;
 
+import org.linnaeus.server.bean.SearchCircle;
 import org.linnaeus.server.bean.Trend;
 
 import java.util.ArrayList;
@@ -28,13 +29,12 @@ public class TrendManager {
         //Test method realization
         ArrayList<Trend> testTrends = new ArrayList<Trend>();
 		for (int i = 0; i < 5; i++){
-            testTrends.add(new Trend(testTrendValue));
+            testTrends.add(new Trend(testTrendValue, 124));
         }
         return testTrends;
     }
 
-    public ArrayList<Trend> acquireTrends(String trendValue){
-        testTrendValue = trendValue;
+    public ArrayList<Trend> acquireTrends(SearchCircle searchCircle){
         return acquireTrends();
     }
 }

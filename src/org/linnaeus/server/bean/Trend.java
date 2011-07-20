@@ -13,12 +13,22 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class Trend {
 
     private String value;
+    private int mentions;
 
     public Trend() {
     }
 
-    public Trend(String value) {
+    public Trend(String value, int mentions) {
         this.value = value;
+        this.mentions = mentions;
+    }
+
+    public int getMentions() {
+        return mentions;
+    }
+
+    public void setMentions(int mentions) {
+        this.mentions = mentions;
     }
 
     public String getValue() {

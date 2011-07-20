@@ -1,5 +1,6 @@
 package org.linnaeus.server.service;
 
+import org.linnaeus.server.bean.SearchCircle;
 import org.linnaeus.server.bean.Trend;
 import org.linnaeus.server.manager.TrendManager;
 
@@ -29,11 +30,11 @@ import java.util.ArrayList;
 public class TrendsService {
 
     @POST
-	//@Consumes( { MediaType.APPLICATION_JSON } )
+	@Consumes( { MediaType.APPLICATION_JSON } )
     @Produces( { MediaType.APPLICATION_JSON } )
-	public ArrayList<Trend> getTrends() {
-        //System.out.println(jsonSearchCircle);
-        return TrendManager.getInstance().acquireTrends();
+	public ArrayList<Trend> getTrends(SearchCircle jsonSearchCircle) {
+        System.out.println(jsonSearchCircle);
+        return TrendManager.getInstance().acquireTrends(jsonSearchCircle);
 	}
 
 	// This method is called if XMLis request
