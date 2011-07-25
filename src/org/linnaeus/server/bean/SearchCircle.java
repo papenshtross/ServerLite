@@ -16,6 +16,16 @@ public class SearchCircle {
     private int lng;
     private int distance;
 
+
+    public SearchCircle() {
+    }
+
+    public SearchCircle(int lat, int lng, int distance) {
+        this.lat = lat;
+        this.lng = lng;
+        this.distance = distance;
+    }
+
     public int getLat() {
         return lat;
     }
