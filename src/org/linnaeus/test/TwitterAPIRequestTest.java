@@ -9,6 +9,7 @@ import org.linnaeus.server.bean.Trend;
 import org.linnaeus.server.manager.NativeRequestManager;
 import org.linnaeus.server.manager.RequestManager;
 import org.linnaeus.server.manager.TrendManager;
+import org.linnaeus.server.twitter.Login;
 import twitter4j.Tweet;
 
 import java.util.ArrayList;

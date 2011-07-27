@@ -1,6 +1,7 @@
 package org.linnaeus.server.manager;
 
 import org.linnaeus.server.bean.*;
+import org.linnaeus.server.twitter.Login;
 import org.linnaeus.server.twitter.TwitterRequest;
 import org.linnaeus.utils.BeanFormatUtil;
 import twitter4j.*;
@@ -23,6 +24,7 @@ public class RequestManager {
 
     private RequestManager(){
         twitter  = new TwitterFactory().getInstance();
+        Login.login(twitter);
     }
 
     public static RequestManager getInstance(){
@@ -31,7 +33,6 @@ public class RequestManager {
 
     public List<Tweet> getTweetsBySearchCircle(SearchCircle searchCircle){
         Query query = new Query();
-
         query.setGeoCode(getGeoLocationBySearchCircle(searchCircle)
                 , searchCircle.getDistance()
                 / TwitterRequest.GEO_TO_METERS_FACTOR, Query.KILOMETERS);
@@ -48,7 +49,7 @@ public class RequestManager {
     }
 
     public ArrayList<org.linnaeus.server.bean.Trend> getTrendsBySearchCircle(SearchCircle searchCircle) {
-        ArrayList<org.linnaeus.server.bean.Trend> trends = new ArrayList<org.linnaeus.server.bean.Trend>();
+        ArrayList<org.linnaeus.server.bean.Trend> trends;
         List<Tweet> tweets = getTweetsBySearchCircle(searchCircle);
         if (tweets.size() < TWEETS_AMOUNT_BEFORE_TRENDS){
             trends = BeanFormatUtil.convertTweetsToTrends(tweets);
