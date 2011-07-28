@@ -2,18 +2,14 @@ package org.linnaeus.test;
 
 import junit.framework.TestCase;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.linnaeus.server.bean.SearchCircle;
 import org.linnaeus.server.bean.Trend;
 import org.linnaeus.server.manager.NativeRequestManager;
 import org.linnaeus.server.manager.RequestManager;
 import org.linnaeus.server.manager.TrendManager;
-import org.linnaeus.server.twitter.Login;
-import twitter4j.Tweet;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by IntelliJ IDEA.

@@ -33,7 +33,6 @@ public class TrendsService {
 	@Consumes( { MediaType.APPLICATION_JSON } )
     @Produces( { MediaType.APPLICATION_JSON } )
 	public ArrayList<Trend> getTrends(SearchCircle jsonSearchCircle) {
-        System.out.println(jsonSearchCircle);
         return TrendManager.getInstance().acquireTrends(jsonSearchCircle);
 	}
 

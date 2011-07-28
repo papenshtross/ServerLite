@@ -1,6 +1,8 @@
 package org.linnaeus.server.manager;
 
-import org.linnaeus.server.bean.*;
+import org.linnaeus.server.bean.Advice;
+import org.linnaeus.server.bean.AdviceRequest;
+import org.linnaeus.server.bean.SearchCircle;
 import org.linnaeus.server.twitter.Login;
 import org.linnaeus.server.twitter.TwitterRequest;
 import org.linnaeus.utils.BeanFormatUtil;
@@ -70,5 +72,12 @@ public class RequestManager {
     private GeoLocation getGeoLocationBySearchCircle(SearchCircle searchCircle){
         return new GeoLocation(searchCircle.getLat() / TwitterRequest.GEO_TO_E6_FACTOR
                 , searchCircle.getLng() / TwitterRequest.GEO_TO_E6_FACTOR);
+    }
+
+    public ArrayList<Advice> getAdvicesByAdviceRequest(AdviceRequest adviceRequest) {
+        ArrayList<Advice> advices = new ArrayList<Advice>();
+        advices.add(new Advice(adviceRequest.getAdviceRequest(),"test", 4.5));
+        advices.add(new Advice(adviceRequest.getAdviceRequest(),"test2", 3.5));
+        return advices;
     }
 }

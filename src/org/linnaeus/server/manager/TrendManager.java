@@ -2,16 +2,8 @@ package org.linnaeus.server.manager;
 
 import org.linnaeus.server.bean.SearchCircle;
 import org.linnaeus.server.bean.Trend;
-import org.linnaeus.server.twitter.TwitterRequest;
-import org.linnaeus.utils.BeanFormatUtil;
-import twitter4j.GeoLocation;
-import twitter4j.Tweet;
-import twitter4j.Twitter;
-import twitter4j.TwitterFactory;
-import twitter4j.api.LocalTrendsMethods;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by IntelliJ IDEA.
@@ -39,7 +31,7 @@ public class TrendManager {
     }
 
      public ArrayList<Trend> acquireTrends(){
-        //Test method realization
+        //Test method implementation
         ArrayList<Trend> testTrends = new ArrayList<Trend>();
 		for (int i = 0; i < 5; i++){
             testTrends.add(new Trend(testTrendValue, 124));
