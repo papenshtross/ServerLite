@@ -26,6 +26,12 @@ public class SearchCircle {
         this.distance = distance;
     }
 
+    public SearchCircle(AdviceRequest adviceRequest){
+        this.lat = adviceRequest.getLat();
+        this.lng = adviceRequest.getLng();
+        this.distance = adviceRequest.getDistance();
+    }
+
     public int getLat() {
         return lat;
     }

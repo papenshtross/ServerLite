@@ -16,6 +16,7 @@ public class AdviceRequest {
     private int lng;
     private int distance;
     private String adviceRequest;
+    private String type;
 
     public AdviceRequest(int lat, int lng, int distance, String adviceRequest) {
         this.lat = lat;
@@ -25,6 +26,14 @@ public class AdviceRequest {
     }
 
     public AdviceRequest() {
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     public int getLat() {

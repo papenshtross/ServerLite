@@ -1,6 +1,5 @@
 package org.linnaeus.server.manager;
 
-import org.linnaeus.server.bean.Advice;
 import org.linnaeus.server.bean.AdviceRequest;
 import org.linnaeus.server.bean.SearchCircle;
 import org.linnaeus.server.twitter.Login;
@@ -35,10 +34,8 @@ public class RequestManager {
 
     public List<Tweet> getTweetsBySearchCircle(SearchCircle searchCircle){
         Query query = new Query();
-        query.setGeoCode(getGeoLocationBySearchCircle(searchCircle)
-                , searchCircle.getDistance()
-                / TwitterRequest.GEO_TO_METERS_FACTOR, Query.KILOMETERS);
-        query.setRpp(100);
+        setSearchCircleToQuery(query, searchCircle);
+        query.setRpp(TwitterRequest.SEARCH_QUERY_PARAM_RPP_INT);
         List<Tweet> tweets;
         try {
             QueryResult result = twitter.search(query);
@@ -74,10 +71,44 @@ public class RequestManager {
                 , searchCircle.getLng() / TwitterRequest.GEO_TO_E6_FACTOR);
     }
 
-    public ArrayList<Advice> getAdvicesByAdviceRequest(AdviceRequest adviceRequest) {
-        ArrayList<Advice> advices = new ArrayList<Advice>();
-        advices.add(new Advice(adviceRequest.getAdviceRequest(),"test", 4.5));
-        advices.add(new Advice(adviceRequest.getAdviceRequest(),"test2", 3.5));
-        return advices;
+    private GeoLocation getGeoLocationByAdviceRequest(AdviceRequest adviceRequest){
+        return new GeoLocation(adviceRequest.getLat() / TwitterRequest.GEO_TO_E6_FACTOR
+                , adviceRequest.getLng() / TwitterRequest.GEO_TO_E6_FACTOR);
+    }
+
+    public ResponseList<Place> getPlacesByAdviceRequest(AdviceRequest adviceRequest){
+        ResponseList<Place> places = null;
+        GeoQuery geoQuery = new GeoQuery(getGeoLocationByAdviceRequest(adviceRequest));
+        geoQuery.setGranularity(TwitterRequest.GEO_SEARCH_GRANULARITY_POI);
+        geoQuery.setAccuracy(String.valueOf(adviceRequest.getDistance()));
+        geoQuery.setMaxResults(TwitterRequest.GEO_SEARCH_MAX_RESULTS);
+        try {
+            places = twitter.searchPlaces(geoQuery);
+        } catch (TwitterException e) {
+            e.printStackTrace();
+        }
+        return places;
+    }
+
+    public List<Tweet> getTweetsByAdviceRequest(AdviceRequest adviceRequest) {
+        Query query = new Query(adviceRequest.getAdviceRequest());
+        SearchCircle searchCircle = new SearchCircle(adviceRequest);
+        setSearchCircleToQuery(query, searchCircle);
+        query.setRpp(TwitterRequest.SEARCH_QUERY_PARAM_RPP_INT);
+        List<Tweet> tweets;
+        try {
+            QueryResult result = twitter.search(query);
+            tweets = result.getTweets();
+        } catch (TwitterException e) {
+            e.printStackTrace();
+            throw new RuntimeException(e);
+        }
+        return tweets;
+    }
+
+    private void setSearchCircleToQuery(Query query, SearchCircle searchCircle){
+        query.setGeoCode(getGeoLocationBySearchCircle(searchCircle)
+                , searchCircle.getDistance()
+                / TwitterRequest.GEO_TO_METERS_FACTOR, Query.KILOMETERS);
     }
 }

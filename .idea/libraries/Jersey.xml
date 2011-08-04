@@ -3,8 +3,18 @@
     <CLASSES>
       <root url="file://$PROJECT_DIR$/web/WEB-INF/lib" />
     </CLASSES>
-    <JAVADOC />
-    <SOURCES />
+    <JAVADOC>
+      <root url="file://E:/Downloads/CHROME/twitter4j-2.2.3/twitter4j-async/javadoc" />
+      <root url="file://E:/Downloads/CHROME/twitter4j-2.2.3/twitter4j-core/javadoc" />
+      <root url="file://E:/Downloads/CHROME/twitter4j-2.2.3/twitter4j-media-support/javadoc" />
+      <root url="file://E:/Downloads/CHROME/twitter4j-2.2.3/twitter4j-stream/javadoc" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="file://E:/Downloads/CHROME/twitter4j-2.2.3/twitter4j-async/src/main/java" />
+      <root url="file://E:/Downloads/CHROME/twitter4j-2.2.3/twitter4j-core/src/main/java" />
+      <root url="file://E:/Downloads/CHROME/twitter4j-2.2.3/twitter4j-media-support/src/main/java" />
+      <root url="file://E:/Downloads/CHROME/twitter4j-2.2.3/twitter4j-stream/src/main/java" />
+    </SOURCES>
     <jarDirectory url="file://$PROJECT_DIR$/web/WEB-INF/lib" recursive="false" />
   </library>
 </component>

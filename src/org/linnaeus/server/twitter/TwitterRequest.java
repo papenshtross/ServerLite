@@ -16,6 +16,7 @@ public class TwitterRequest {
     public final static String SEARCH_QUERY_PARAM_GEOCODE = "geocode";
     public final static String SEARCH_QUERY_PARAM_RPP = "rpp";
     public final static String SEARCH_QUERY_PARAM_RPP_VALUE = "100";
+    public final static int SEARCH_QUERY_PARAM_RPP_INT = 100;
     public final static String SEARCH_QUERY_PARAM_PAGE = "page";
     public final static String SEARCH_QUERY_PARAM_NEXT_PAGE = "\"next_page\":\"?page=";
     private final static double GEO_FROM_E6_FACTOR = 0.000001;
@@ -23,6 +24,8 @@ public class TwitterRequest {
     public final static double GEO_TO_METERS_FACTOR = 1000.0;
     private final static double GEO_FROM_METERS_FACTOR = 0.001;
     private final static String GEO_KM = "km";
+    public final static String GEO_SEARCH_GRANULARITY_POI = "poi";
+    public final static int GEO_SEARCH_MAX_RESULTS = 100;
 
     public static final String getGeocodeParamValue(SearchCircle searchCircle){
         StringBuilder geoParam = new StringBuilder();
