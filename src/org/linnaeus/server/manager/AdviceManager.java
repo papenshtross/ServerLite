@@ -23,9 +23,10 @@ public class AdviceManager {
     public static final String ADVICE_REQUEST_TYPE_PLACES = "places";
 
     private static AdviceManager instance = new AdviceManager();
+    private RequestManager requestManager;
 
     private AdviceManager(){
-
+        requestManager = RequestManager.getInstance();
     }
 
     public static AdviceManager getInstance(){
@@ -46,19 +47,25 @@ public class AdviceManager {
 
     private ArrayList<Advice> getAdvicesBasedOnPlaces(AdviceRequest adviceRequest){
         ArrayList<Advice> advices = new ArrayList<Advice>();
-        RequestManager requestManager = RequestManager.getInstance();
         ResponseList<Place> places = requestManager.getPlacesByAdviceRequest(adviceRequest);
         for(Place place : places){
-            Advice advice = new Advice();
-            advice.setName(place.getFullName());
-            advice.setDescription(buildAdviceDescriptionFromPlace(place));
-            advices.add(advice);
+            advices.add(obtainAdviceFromPlace(place));
         }
         return advices;
     }
 
+    //Analyse tweets about the place and returns compiled advice
+    private Advice obtainAdviceFromPlace(Place place){
+        Advice advice = new Advice();
+        advice.setName(place.getFullName());
+        advice.setDescription(buildAdviceDescriptionFromPlace(place));
+        List<Tweet> tweets = requestManager.getTweetsByPlace(place);
+        double rating = TwitterAnalyser.getInstance().retrieveRatingByTweets(tweets);
+        advice.setRating(rating);
+        return advice;
+    }
+
     private ArrayList<Advice> getAdvicesBasedOnTweets(AdviceRequest adviceRequest){
-        RequestManager requestManager = RequestManager.getInstance();
         List<Tweet> tweets = requestManager.getTweetsByAdviceRequest(adviceRequest);
         TwitterAnalyser analyser = TwitterAnalyser.getInstance();
         return analyser.analyseTweeterFlow(tweets);

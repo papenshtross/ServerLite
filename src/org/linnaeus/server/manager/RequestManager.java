@@ -7,6 +7,7 @@ import org.linnaeus.server.twitter.TwitterRequest;
 import org.linnaeus.utils.BeanFormatUtil;
 import twitter4j.*;
 
+import javax.xml.transform.Result;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,7 +21,7 @@ import java.util.List;
 public class RequestManager {
 
     private static RequestManager instance = new RequestManager();
-    public static int TWEETS_AMOUNT_BEFORE_TRENDS = 20;
+
     private Twitter twitter;
 
     private RequestManager(){
@@ -32,25 +33,22 @@ public class RequestManager {
         return instance;
     }
 
+    public List<Tweet> getTweetsByPlace(Place place){
+        Query query = new Query(TwitterRequest.SEARCH_QUERY_PARAM_PLACE + place.getId());
+        return getTweetsByQuery(query);
+    }
+
     public List<Tweet> getTweetsBySearchCircle(SearchCircle searchCircle){
         Query query = new Query();
         setSearchCircleToQuery(query, searchCircle);
         query.setRpp(TwitterRequest.SEARCH_QUERY_PARAM_RPP_INT);
-        List<Tweet> tweets;
-        try {
-            QueryResult result = twitter.search(query);
-            tweets = result.getTweets();
-        } catch (TwitterException e) {
-            e.printStackTrace();
-            throw new RuntimeException(e);
-        }
-        return tweets;
+        return getTweetsByQuery(query);
     }
 
     public ArrayList<org.linnaeus.server.bean.Trend> getTrendsBySearchCircle(SearchCircle searchCircle) {
         ArrayList<org.linnaeus.server.bean.Trend> trends;
         List<Tweet> tweets = getTweetsBySearchCircle(searchCircle);
-        if (tweets.size() < TWEETS_AMOUNT_BEFORE_TRENDS){
+        if (tweets.size() < TwitterRequest.TWEETS_AMOUNT_BEFORE_TRENDS){
             trends = BeanFormatUtil.convertTweetsToTrends(tweets);
         } else {
             try {
@@ -76,9 +74,21 @@ public class RequestManager {
                 , adviceRequest.getLng() / TwitterRequest.GEO_TO_E6_FACTOR);
     }
 
+    public SimilarPlaces getSimilarPlacesByAdviceRequest(AdviceRequest adviceRequest){
+        SimilarPlaces places = null;
+        try {
+            places = twitter.getSimilarPlaces(getGeoLocationByAdviceRequest(adviceRequest)
+                    , adviceRequest.getAdviceRequest(), null, null);
+        } catch (TwitterException e) {
+            e.printStackTrace();
+        }
+        return places;
+    }
+
     public ResponseList<Place> getPlacesByAdviceRequest(AdviceRequest adviceRequest){
         ResponseList<Place> places = null;
         GeoQuery geoQuery = new GeoQuery(getGeoLocationByAdviceRequest(adviceRequest));
+        geoQuery.setQuery(adviceRequest.getAdviceRequest());
         geoQuery.setGranularity(TwitterRequest.GEO_SEARCH_GRANULARITY_POI);
         geoQuery.setAccuracy(String.valueOf(adviceRequest.getDistance()));
         geoQuery.setMaxResults(TwitterRequest.GEO_SEARCH_MAX_RESULTS);
@@ -95,20 +105,34 @@ public class RequestManager {
         SearchCircle searchCircle = new SearchCircle(adviceRequest);
         setSearchCircleToQuery(query, searchCircle);
         query.setRpp(TwitterRequest.SEARCH_QUERY_PARAM_RPP_INT);
-        List<Tweet> tweets;
-        try {
-            QueryResult result = twitter.search(query);
-            tweets = result.getTweets();
-        } catch (TwitterException e) {
-            e.printStackTrace();
-            throw new RuntimeException(e);
-        }
-        return tweets;
+        return getTweetsByQuery(query);
     }
 
     private void setSearchCircleToQuery(Query query, SearchCircle searchCircle){
         query.setGeoCode(getGeoLocationBySearchCircle(searchCircle)
                 , searchCircle.getDistance()
                 / TwitterRequest.GEO_TO_METERS_FACTOR, Query.KILOMETERS);
+    }
+
+    //Returns maximum, up to 1500 of tweets
+    private List<Tweet> getTweetsByQuery(Query query){
+        List<Tweet> tweets = new ArrayList<Tweet>();
+        int i = 1;
+        QueryResult result;
+        List<Tweet> tweetsPage;
+        try {
+            do {
+                query.setPage(i);
+                result = twitter.search(query);
+                tweetsPage = result.getTweets();
+                tweets.addAll(tweetsPage);
+                i++;
+            } while (tweetsPage.size() == TwitterRequest.SEARCH_QUERY_PARAM_RPP_INT
+                    && result.getPage() < TwitterRequest.SEARCH_MAX_PAGES);
+        } catch (TwitterException e) {
+            e.printStackTrace();
+            throw new RuntimeException(e);
+        }
+        return tweets;
     }
 }

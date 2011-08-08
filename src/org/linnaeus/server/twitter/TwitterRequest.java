@@ -26,6 +26,9 @@ public class TwitterRequest {
     private final static String GEO_KM = "km";
     public final static String GEO_SEARCH_GRANULARITY_POI = "poi";
     public final static int GEO_SEARCH_MAX_RESULTS = 100;
+    public static int TWEETS_AMOUNT_BEFORE_TRENDS = 20;
+    public static String SEARCH_QUERY_PARAM_PLACE = "place:";
+    public static int SEARCH_MAX_PAGES = 15;
 
     public static final String getGeocodeParamValue(SearchCircle searchCircle){
         StringBuilder geoParam = new StringBuilder();

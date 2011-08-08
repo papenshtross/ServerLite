@@ -33,20 +33,7 @@
   </component>
   <component name="DebuggerManager">
     <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/src/org/linnaeus/test/TwitterAPIRequestTest.java" line="80" class="org.linnaeus.test.TwitterAPIRequestTest" package="org.linnaeus.test">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/org/linnaeus/server/analyser/TwitterAnalyser.java" line="28" class="org.linnaeus.server.analyser.TwitterAnalyser" package="org.linnaeus.server.analyser">
+      <breakpoint url="file://$PROJECT_DIR$/src/org/linnaeus/test/TwitterAPIRequestTest.java" line="81" class="org.linnaeus.test.TwitterAPIRequestTest" package="org.linnaeus.test">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -100,30 +87,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="RequestManager.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/linnaeus/server/manager/RequestManager.java">
+      <file leaf-file-name="GeoMethods.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://E:/Downloads/CHROME/twitter4j-2.2.3/twitter4j-core/src/main/java/twitter4j/api/GeoMethods.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="0" selection-start="4033" selection-end="4033" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NativeRequestManager.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/linnaeus/server/manager/NativeRequestManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="45" selection-start="2163" selection-end="2163" vertical-scroll-proportion="0.0">
+            <state line="42" column="0" selection-start="2142" selection-end="2142" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GeoMethods.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://E:/Downloads/CHROME/twitter4j-2.2.3/twitter4j-core/src/main/java/twitter4j/api/GeoMethods.java">
+      <file leaf-file-name="TwitterImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://E:/Downloads/CHROME/twitter4j-2.2.3/twitter4j-core/src/main/java/twitter4j/TwitterImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="24" selection-start="2166" selection-end="2166" vertical-scroll-proportion="0.0">
+            <state line="1673" column="45" selection-start="61825" selection-end="61825" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlaceJSONImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://E:/Downloads/CHROME/twitter4j-2.2.3/twitter4j-core/src/main/java/twitter4j/PlaceJSONImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="73" column="0" selection-start="2463" selection-end="2463" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TwitterRequest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/linnaeus/server/twitter/TwitterRequest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="44" selection-start="1413" selection-end="1413" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -132,52 +126,34 @@
       <file leaf-file-name="AdviceManager.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/linnaeus/server/manager/AdviceManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="35" selection-start="2217" selection-end="2217" vertical-scroll-proportion="0.0">
+            <state line="47" column="30" selection-start="1421" selection-end="1421" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JUnit38ClassRunner.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.8.jar!/org/junit/internal/runners/JUnit38ClassRunner.class">
+      <file leaf-file-name="RequestManager.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/linnaeus/server/manager/RequestManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="16" selection-start="540" selection-end="540" vertical-scroll-proportion="-3.56">
+            <state line="87" column="31" selection-start="3198" selection-end="3198" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TwitterAPIRequestTest.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="TwitterAPIRequestTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/linnaeus/test/TwitterAPIRequestTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="47" selection-start="2198" selection-end="2198" vertical-scroll-proportion="0.0">
+            <state line="76" column="52" selection-start="2464" selection-end="2464" vertical-scroll-proportion="0.4054054">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdviceService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/linnaeus/server/service/AdviceService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="43" selection-start="690" selection-end="690" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdviceRequest.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AdviceRequest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/linnaeus/server/bean/AdviceRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="36" selection-start="350" selection-end="350" vertical-scroll-proportion="0.2853717">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Advice.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/linnaeus/server/bean/Advice.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="13" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0">
+            <state line="22" column="47" selection-start="539" selection-end="539" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -186,10 +162,8 @@
       <file leaf-file-name="TwitterAnalyser.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/linnaeus/server/analyser/TwitterAnalyser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="40" selection-start="926" selection-end="926" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="28" column="19" selection-start="611" selection-end="611" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -204,8 +178,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/org/linnaeus/test/TwitterAPINativeRequestTest.java" />
-        <option value="$PROJECT_DIR$/src/org/linnaeus/utils/BeanFormatUtil.java" />
         <option value="$PROJECT_DIR$/src/org/linnaeus/server/bean/Trend.java" />
         <option value="$PROJECT_DIR$/src/org/linnaeus/server/twitter/Login.java" />
         <option value="$PROJECT_DIR$/src/org/linnaeus/server/manager/TrendManager.java" />
@@ -213,13 +185,15 @@
         <option value="$PROJECT_DIR$/src/org/linnaeus/server/bean/Advice.java" />
         <option value="$PROJECT_DIR$/src/org/linnaeus/server/service/AdviceService.java" />
         <option value="$PROJECT_DIR$/src/org/linnaeus/server/bean/SearchCircle.java" />
-        <option value="$PROJECT_DIR$/src/org/linnaeus/server/twitter/TwitterRequest.java" />
         <option value="$PROJECT_DIR$/src/org/linnaeus/server/bean/AdviceRequest.java" />
         <option value="$PROJECT_DIR$/src/org/linnaeus/server/twitter/Constants.java" />
-        <option value="$PROJECT_DIR$/src/org/linnaeus/server/manager/AdviceManager.java" />
+        <option value="E:/Downloads/CHROME/twitter4j-2.2.3/twitter4j-core/src/main/java/twitter4j/GeoQuery.java" />
+        <option value="$PROJECT_DIR$/src/org/linnaeus/server/twitter/TwitterRequest.java" />
         <option value="$PROJECT_DIR$/src/org/linnaeus/server/manager/RequestManager.java" />
         <option value="$PROJECT_DIR$/src/org/linnaeus/server/analyser/TwitterAnalyser.java" />
+        <option value="$PROJECT_DIR$/src/org/linnaeus/server/manager/AdviceManager.java" />
         <option value="$PROJECT_DIR$/src/org/linnaeus/test/TwitterAPIRequestTest.java" />
+        <option value="E:/Downloads/CHROME/twitter4j-2.2.3/twitter4j-core/src/main/java/twitter4j/PlaceJSONImpl.java" />
       </list>
     </option>
   </component>
@@ -240,7 +214,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="0" />
+    <option name="STATE" value="2" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
@@ -255,6 +229,9 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Favorites" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -303,6 +280,84 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="WEB-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerLite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerLite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerLite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerLite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="twitter4j-core-2.2.3.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="twitter4j" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerLite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerLite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="twitter4j-core-2.2.3.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -499,9 +554,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -725,24 +777,24 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.19463088" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14932886" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7315436" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32214764" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25075987" sideWeight="0.7818792" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2181208" sideWeight="0.0" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25075987" sideWeight="0.6409396" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3590604" sideWeight="0.0" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14932886" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -794,118 +846,110 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://E:/Downloads/CHROME/twitter4j-2.2.3/twitter4j-core/src/main/java/twitter4j/Query.java">
+    <entry file="file://$PROJECT_DIR$/src/org/linnaeus/server/bean/Advice.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="11" selection-start="1645" selection-end="1645" vertical-scroll-proportion="-0.14419475">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/linnaeus/server/bean/SearchCircle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="52" selection-start="726" selection-end="726" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/linnaeus/server/twitter/TwitterRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="54" selection-start="668" selection-end="668" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/linnaeus/server/twitter/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="97" selection-start="581" selection-end="581" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="12" column="13" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/linnaeus/server/manager/TrendManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="42" selection-start="745" selection-end="745" vertical-scroll-proportion="0.0">
+        <state line="27" column="28" selection-start="597" selection-end="597" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Downloads/CHROME/twitter4j-2.2.5-SNAPSHOT/twitter4j-core/src/main/java/twitter4j/GeoQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="19" selection-start="820" selection-end="820" vertical-scroll-proportion="0.36147758">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://E:/Downloads/CHROME/twitter4j-2.2.3/twitter4j-core/src/main/java/twitter4j/GeoQuery.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="19" selection-start="820" selection-end="820" vertical-scroll-proportion="0.0">
+        <state line="130" column="0" selection-start="3861" selection-end="3861" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://E:/Downloads/CHROME/twitter4j-2.2.3/twitter4j-core/src/main/java/twitter4j/api/GeoMethods.java">
+    <entry file="file://E:/Downloads/CHROME/twitter4j-2.2.3/twitter4j-core/src/main/java/twitter4j/Query.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="24" selection-start="2166" selection-end="2166" vertical-scroll-proportion="0.0">
+        <state line="46" column="11" selection-start="1645" selection-end="1645" vertical-scroll-proportion="0.33333334">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/linnaeus/server/manager/NativeRequestManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="45" selection-start="2163" selection-end="2163" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.8.jar!/org/junit/internal/runners/JUnit38ClassRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="16" selection-start="540" selection-end="540" vertical-scroll-proportion="-3.56">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/linnaeus/server/manager/RequestManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="0" selection-start="4033" selection-end="4033" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/linnaeus/server/manager/AdviceManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="35" selection-start="2217" selection-end="2217" vertical-scroll-proportion="0.0">
+        <state line="20" column="13" selection-start="596" selection-end="596" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/linnaeus/server/analyser/TwitterAnalyser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="40" selection-start="926" selection-end="926" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/linnaeus/server/bean/Advice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0">
+        <state line="28" column="19" selection-start="611" selection-end="611" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/linnaeus/test/TwitterAPIRequestTest.java">
+    <entry file="file://$PROJECT_DIR$/src/org/linnaeus/server/twitter/TwitterRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="47" selection-start="2198" selection-end="2198" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/linnaeus/server/service/AdviceService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="43" selection-start="690" selection-end="690" vertical-scroll-proportion="0.0">
+        <state line="30" column="44" selection-start="1413" selection-end="1413" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/linnaeus/server/bean/AdviceRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="36" selection-start="350" selection-end="350" vertical-scroll-proportion="0.2853717">
+        <state line="22" column="47" selection-start="539" selection-end="539" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://E:/Downloads/CHROME/twitter4j-2.2.3/twitter4j-core/src/main/java/twitter4j/api/GeoMethods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="0" selection-start="2142" selection-end="2142" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Downloads/CHROME/twitter4j-2.2.3/twitter4j-core/src/main/java/twitter4j/TwitterImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1673" column="45" selection-start="61825" selection-end="61825" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/linnaeus/server/manager/RequestManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="31" selection-start="3198" selection-end="3198" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Downloads/CHROME/twitter4j-2.2.3/twitter4j-core/src/main/java/twitter4j/internal/util/ParseUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="25" selection-start="1616" selection-end="1616" vertical-scroll-proportion="0.33239436">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Downloads/CHROME/twitter4j-2.2.3/twitter4j-core/src/main/java/twitter4j/PlaceJSONImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="0" selection-start="2463" selection-end="2463" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/linnaeus/server/manager/AdviceManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="30" selection-start="1421" selection-end="1421" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/linnaeus/test/TwitterAPIRequestTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="52" selection-start="2464" selection-end="2464" vertical-scroll-proportion="0.4054054">
           <folding />
         </state>
       </provider>
@@ -964,11 +1008,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>JPA|ServerLite</last-edited>
+          <last-edited>ServerLite</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

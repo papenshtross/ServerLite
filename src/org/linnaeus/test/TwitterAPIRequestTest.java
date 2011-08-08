@@ -11,8 +11,11 @@ import org.linnaeus.server.manager.AdviceManager;
 import org.linnaeus.server.manager.NativeRequestManager;
 import org.linnaeus.server.manager.RequestManager;
 import org.linnaeus.server.manager.TrendManager;
+import twitter4j.SimilarPlaces;
+import twitter4j.Tweet;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by IntelliJ IDEA.
@@ -23,10 +26,10 @@ import java.util.ArrayList;
  */
 public class TwitterAPIRequestTest extends TestCase {
 
-    private final int TEST_LAT = 56851117;
-    private final int TEST_LNG = 14831659;
-    private final int TEST_RAD = 2000000;
-    private final String TEST_ADVICE_REQUEST_VALUE = "iphone";
+    private final int TEST_LAT = 40768459;
+    private final int TEST_LNG = -73534581;
+    private final int TEST_RAD = 10000;
+    private final String TEST_ADVICE_REQUEST_VALUE = "dress";
     private final String TEST_ADVICE_TYPE_INFO = "info";
     private final String TEST_ADVICE_TYPE_PLACES = "places";
 
@@ -41,28 +44,28 @@ public class TwitterAPIRequestTest extends TestCase {
         searchCircle = new SearchCircle(TEST_LAT, TEST_LNG, TEST_RAD);
     }
 
-    /*@Ignore
-    @Test
+
+   /* @Test
     public void testNativeSearchRequest(){
         String result = nativeRequestManager.requestTweetsBySearchCircle(searchCircle);
         assertNotNull(result);
         System.out.println(result);
-    }
+    }*/
 
-    @Ignore
-    @Test
+
+   /* @Test
     public void testSearchRequest(){
         List<Tweet> tweets = requestManager.getTweetsBySearchCircle(searchCircle);
         assertNotNull(tweets);
         System.out.print(tweets);
     }*/
 
-    @Test
+   /* @Test
     public void testTrendManager(){
         ArrayList<Trend> trends = TrendManager.getInstance().acquireTrends(searchCircle);
         assertNotNull(trends);
         System.out.print(trends);
-    }
+    }*/
 
     @Test
     public void testAdviceFunctionality(){
@@ -82,4 +85,18 @@ public class TwitterAPIRequestTest extends TestCase {
         assertNotNull(advices);
         System.out.print(advices);
     }
+
+    /*@Test
+    public void testGetSimilarPlaces(){
+        AdviceRequest adviceRequest = new AdviceRequest();
+        adviceRequest.setLat(TEST_LAT);
+        adviceRequest.setLng(TEST_LNG);
+        adviceRequest.setDistance(TEST_RAD);
+        adviceRequest.setAdviceRequest(TEST_ADVICE_REQUEST_VALUE);
+        adviceRequest.setType(TEST_ADVICE_TYPE_PLACES);
+        SimilarPlaces places = RequestManager.getInstance()
+                .getSimilarPlacesByAdviceRequest(adviceRequest);
+        assertNotNull(places);
+        System.out.print(places);
+    }*/
 }

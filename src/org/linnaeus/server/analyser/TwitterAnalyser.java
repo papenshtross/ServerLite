@@ -25,6 +25,10 @@ public class TwitterAnalyser {
         return instance;
     }
 
+    public double retrieveRatingByTweets(List<Tweet> tweets){
+        return 5.5;
+    }
+
     public ArrayList<Advice> analyseTweeterFlow(List<Tweet> tweets){
         ArrayList<Advice> advices = new ArrayList<Advice>();
         for (Tweet tweet : tweets){
