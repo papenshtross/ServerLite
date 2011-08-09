@@ -29,7 +29,7 @@ public class TwitterAPIRequestTest extends TestCase {
     private final int TEST_LAT = 40768459;
     private final int TEST_LNG = -73534581;
     private final int TEST_RAD = 10000;
-    private final String TEST_ADVICE_REQUEST_VALUE = "dress";
+    private final String TEST_ADVICE_REQUEST_VALUE = "NY";
     private final String TEST_ADVICE_TYPE_INFO = "info";
     private final String TEST_ADVICE_TYPE_PLACES = "places";
 
